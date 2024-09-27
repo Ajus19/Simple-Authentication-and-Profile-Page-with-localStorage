@@ -7,6 +7,7 @@ This project is a simple web application that allows users to register, log in, 
 
 ## Features
 
+- **Responsive**
 - **User Registration**: Users can sign up by entering their email, username, password, and other information.
 - **Login**: Users can log in using their username or email.
 - **User Profile**: Displays the saved user information such as username, job, and address.
