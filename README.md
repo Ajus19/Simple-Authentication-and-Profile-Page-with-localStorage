@@ -1,5 +1,5 @@
 
-![App Screenshot](./public/img/profile-analysis-42.svg)
+![App Screenshot](./preview.png)
 # Simple Authentication and Profile Page with localStorage
 
 This project is a simple web application that allows users to register, log in, and view their profiles. User data is stored in `localStorage`, so users can return and see their information without needing to authenticate again.
