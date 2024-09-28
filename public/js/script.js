@@ -8,7 +8,11 @@ if (registerForm) {
     if (
       !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailInput.value)
     ) {
-      swal("Good job!", "You clicked the button!", "success");
+      swal({
+        title: "Error!",
+        text: "Email Is Invalid!",
+        icon: "danger",
+      });
       return false;
     }
     // validation username
