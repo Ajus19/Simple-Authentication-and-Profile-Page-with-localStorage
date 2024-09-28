@@ -1,9 +1,8 @@
-
 ![App Screenshot](./preview.png)
+
 # Simple Authentication and Profile Page with localStorage
 
 This project is a simple web application that allows users to register, log in, and view their profiles. User data is stored in `localStorage`, so users can return and see their information without needing to authenticate again.
-
 
 ## Features
 
@@ -19,11 +18,11 @@ This project is a simple web application that allows users to register, log in, 
 - CSS
 - JavaScript
 - Bootstrap (for styling)
+- SweetAlert (for alert styling)
 
 ## Installation
 
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/username/repo-name.git
-
-
+   ```
