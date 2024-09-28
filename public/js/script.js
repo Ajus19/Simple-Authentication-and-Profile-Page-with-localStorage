@@ -9,21 +9,26 @@ if (registerForm) {
       !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailInput.value)
     ) {
       swal({
-        title: "Error!",
-        text: "Email Is Invalid!",
-        icon: "danger",
+        title: "Email Is Invalid!",
+        icon: "error",
       });
       return false;
     }
     // validation username
     if (usernameInput.value.length < 5) {
-      alert("Username minimal 6 karakter!");
+      swal({
+        title: "Username at Least 6 Characters",
+        icon: "error",
+      });
       return false;
     }
 
     // validation password
     if (passwordInput.value.length < 8) {
-      alert("Password minimal 8 karakter!");
+      swal({
+        title: "Password at Least 8 Characters",
+        icon: "error",
+      });
       return false;
     }
 
@@ -36,9 +41,14 @@ if (registerForm) {
       password: passwordInput.value,
     };
 
-    localStorage.setItem("infoUser", JSON.stringify(infoUser));
-    swal("Good job!", "You clicked the button!", "success");
-    window.location = "login.html";
+    swal({
+      title: "Good Job!",
+      text: "Registration Successfully",
+      icon: "success",
+    }).then((value) => {
+      localStorage.setItem("infoUser", JSON.stringify(infoUser));
+      window.location = "login.html";
+    });
   });
 }
 // Register end
@@ -58,11 +68,19 @@ if (loginForm) {
         JSON.parse(localStorage.getItem("infoUser")).password ===
           passwordToLogin.value)
     ) {
-      alert("Login Successfully!");
-      window.location = "profile.html";
-      localStorage.setItem("login_required", true);
+      swal({
+        title: "Good Job!",
+        text: "Login Successfully",
+        icon: "success",
+      }).then((value) => {
+        localStorage.setItem("login_required", true);
+        window.location = "profile.html";
+      });
     } else {
-      alert("password or username wrong");
+      swal({
+        title: "Password or Username Incorrect",
+        icon: "error",
+      });
     }
   });
 }
@@ -105,8 +123,28 @@ var logOutBtn = document.getElementById("logOutBtn");
 if (logOutBtn) {
   logOutBtn.addEventListener("click", function (e) {
     e.preventDefault();
-    localStorage.clear();
-    alert("Log Out Successfully");
-    window.location = "index.html";
+    swal({
+      title: "Are you sure to log out?",
+      icon: "warning",
+      buttons: true,
+      dangerMode: true,
+    }).then((logOut) => {
+      if (logOut) {
+        swal({
+          title: "Goodbye!",
+          text: "You have logged out",
+          icon: "success",
+        }).then((value) => {
+          localStorage.clear();
+          window.location = "index.html";
+        });
+      } else {
+        swal({
+          title: "Cancelled",
+          text: "You have not logged out",
+          icon: "error",
+        });
+      }
+    });
   });
 }
