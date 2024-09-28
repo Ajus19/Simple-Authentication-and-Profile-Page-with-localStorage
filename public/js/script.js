@@ -8,7 +8,7 @@ if (registerForm) {
     if (
       !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailInput.value)
     ) {
-      alert("Masukkan alamat email yang valid!");
+      swal("Good job!", "You clicked the button!", "success");
       return false;
     }
     // validation username
@@ -30,11 +30,10 @@ if (registerForm) {
       job: jobSelect.value,
       address: addressInput.value,
       password: passwordInput.value,
-
     };
 
     localStorage.setItem("infoUser", JSON.stringify(infoUser));
-    alert("Registration Successfully");
+    swal("Good job!", "You clicked the button!", "success");
     window.location = "login.html";
   });
 }
@@ -68,21 +67,19 @@ if (loginForm) {
 if (localStorage.getItem("login_required")) {
   const usernameRoots = document.getElementsByClassName("usernameRoot");
   for (const usernameElement of usernameRoots) {
-    usernameElement.innerHTML = JSON.parse(localStorage.getItem("infoUser")).username;
+    usernameElement.innerHTML = JSON.parse(
+      localStorage.getItem("infoUser")
+    ).username;
   }
 
   const emailRoot = document.getElementsByClassName("emailRoot");
   for (const emailElement of emailRoot) {
-    emailElement.innerHTML = JSON.parse(
-      localStorage.getItem("infoUser")
-    ).email;
+    emailElement.innerHTML = JSON.parse(localStorage.getItem("infoUser")).email;
   }
 
   const jobRoot = document.getElementsByClassName("jobRoot");
   for (const jobRootElement of jobRoot) {
-    jobRootElement.innerHTML = JSON.parse(
-      localStorage.getItem("infoUser")
-    ).job;
+    jobRootElement.innerHTML = JSON.parse(localStorage.getItem("infoUser")).job;
   }
 
   const phoneRoot = document.getElementsByClassName("phoneRoot");
