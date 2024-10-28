@@ -16,104 +16,106 @@
       crossorigin="anonymous"
     />
   </head>
-  <body class="row">
-    <div class=" bg-primary col-lg-7 d-flex align-items-center w-100">
-      <img src="./public/img/profile-analysis-42.svg" alt="illustration" />
-    </div>
-    <div class=" col pt-5 ps-5 pe-4 w-100">
-      <form id="registerForm" class="d-flex flex-column gap-4">
-        <h2>Register Cuyy!! ✒</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut facere,
-          quo, omnis ipsam dolorem velit non incidunt enim facilis illum in
-          molestias rerum nulla veniam voluptates similique reiciendis dicta
-          totam!
-        </p>
-
-        <div>
-          <label for="emailInput" class="form-label">Email</label>
-          <input
-            type="email"
-            class="form-control"
-            id="emailInput"
-            placeholder="Example@gmail.com"
-          />
-        </div>
-
-        <div>
-          <label for="usernameInput" class="form-label">Username</label>
-          <input
-            type="text"
-            class="form-control"
-            id="usernameInput"
-            placeholder="Username"
-          />
-        </div>
-
-        <div class="row">
-          <div class="col">
-            <label for="addressInput" class="form-label">Address</label>
+  <body>
+    <div class="row""
+      <div class=" bg-primary col-lg-7 d-flex align-items-center w-100">
+        <img src="./public/img/profile-analysis-42.svg" alt="illustration" />
+      </div>
+      <div class=" col pt-5 ps-5 pe-4 w-100">
+        <form id="registerForm" class="d-flex flex-column gap-4">
+          <h2>Register Cuyy!! ✒</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut facere,
+            quo, omnis ipsam dolorem velit non incidunt enim facilis illum in
+            molestias rerum nulla veniam voluptates similique reiciendis dicta
+            totam!
+          </p>
+  
+          <div>
+            <label for="emailInput" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="emailInput"
+              placeholder="Example@gmail.com"
+            />
+          </div>
+  
+          <div>
+            <label for="usernameInput" class="form-label">Username</label>
             <input
               type="text"
               class="form-control"
-              id="addressInput"
-              placeholder="Enter Your Address"
+              id="usernameInput"
+              placeholder="Username"
             />
           </div>
-          <div class="col">
-            <label for="phoneInput" class="form-label">Phone Number</label>
+  
+          <div class="row">
+            <div class="col">
+              <label for="addressInput" class="form-label">Address</label>
+              <input
+                type="text"
+                class="form-control"
+                id="addressInput"
+                placeholder="Enter Your Address"
+              />
+            </div>
+            <div class="col">
+              <label for="phoneInput" class="form-label">Phone Number</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="phoneInput"
+                placeholder="000-000-000-000"
+                maxlength="12"
+              />
+            </div>
+          </div>
+  
+          <div>
+            <label for="jobSelect" class="form-label">Select Job</label>
+            <select class="form-select" id="jobSelect">
+              <option value="Front End Developer">Front End Developer</option>
+              <option value="Back End Developer">Back End Developer</option>
+              <option value="Full Stack Developer">Full Stack Developer</option>
+              <option value="Mobile Developer">Mobile Developer</option>
+              <option value="Desktop Developer">Desktop Developer</option>
+            </select>
+          </div>
+  
+          <div>
+            <label for="passwordInput" class="form-label">Password</label>
             <input
-              type="tel"
+              type="password"
               class="form-control"
-              id="phoneInput"
-              placeholder="000-000-000-000"
-              maxlength="12"
+              id="passwordInput"
+              placeholder="*******"
             />
           </div>
-        </div>
-
-        <div>
-          <label for="jobSelect" class="form-label">Select Job</label>
-          <select class="form-select" id="jobSelect">
-            <option value="Front End Developer">Front End Developer</option>
-            <option value="Back End Developer">Back End Developer</option>
-            <option value="Full Stack Developer">Full Stack Developer</option>
-            <option value="Mobile Developer">Mobile Developer</option>
-            <option value="Desktop Developer">Desktop Developer</option>
-          </select>
-        </div>
-
-        <div>
-          <label for="passwordInput" class="form-label">Password</label>
-          <input
-            type="password"
-            class="form-control"
-            id="passwordInput"
-            placeholder="*******"
-          />
-        </div>
-
-        <button type="submit" class="btn btn-primary px-3 py-1">Sign Up</button>
-
-        <p>
-          Already Have an Account?
-          <a class="link-underline link-underline-opacity-0" href="login.html">
-            Sign In here.
-          </a>
-        </p>
-      </form>
+  
+          <button type="submit" class="btn btn-primary px-3 py-1">Sign Up</button>
+  
+          <p>
+            Already Have an Account?
+            <a class="link-underline link-underline-opacity-0" href="login.html">
+              Sign In here.
+            </a>
+          </p>
+        </form>
+      </div>
+      <p class="border-top pt-3 text-center">
+        &copy; 2024 | Made by
+        <a
+          class="link-underline link-underline-opacity-0"
+          href="https://github.com/Ajus19"
+          target="_blank"
+        >
+          Ajus19
+        </a>
+        with love
+      </p>
     </div>
-    <p class="border-top pt-3 text-center">
-      &copy; 2024 | Made by
-      <a
-        class="link-underline link-underline-opacity-0"
-        href="https://github.com/Ajus19"
-        target="_blank"
-      >
-        Ajus19
-      </a>
-      with love
-    </p>
     <script src="./public/js/script.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script
