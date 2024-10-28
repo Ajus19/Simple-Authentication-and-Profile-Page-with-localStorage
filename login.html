@@ -16,73 +16,74 @@
       crossorigin="anonymous"
     />
   </head>
-  <body class="row flex-lg-row-reverse">
-    <div class="container bg-primary col-lg-7 d-flex align-items-center">
-      <img src="./public/img/profiling-80.svg" alt="Illustration" />
+  <body>
+    <div class="row flex-lg-row-reverse" >
+      <div class="container bg-primary col-lg-7 d-flex align-items-center">
+        <img src="./public/img/profiling-80.svg" alt="Illustration" />
+      </div>
+  
+      <!-- LOGIN START -->
+      <div class="container col pt-5 ps-5 pe-lg-5 pe-4">
+        <form id="loginForm" class="d-flex flex-column gap-4">
+          <h2>Login Cuyy!! 🚀</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus
+            reprehenderit assumenda autem rerum natus veniam ea eius obcaecati?
+            Sit nam, nemo quaerat magni dicta beatae laudantium voluptates debitis
+            mollitia ab?
+          </p>
+  
+          <div>
+            <label for="userToLogin" class="form-label">Username / Email</label>
+            <input
+              type="text"
+              class="form-control"
+              id="userToLogin"
+              placeholder="Username, Email"
+              required
+            />
+          </div>
+  
+          <div>
+            <label for="passwordToLogin" class="form-label">Password</label>
+            <input
+              required
+              type="password"
+              class="form-control"
+              id="passwordToLogin"
+              placeholder="*******"
+            />
+          </div>
+  
+          <div class="d-flex align-items-center gap-2">
+            <input type="checkbox" id="rememberMe" class="form-check-input" />
+            <label for="rememberMe" class="form-check-label">Remember Me</label>
+          </div>
+  
+          <button type="submit" class="btn btn-primary">Login</button>
+  
+          <p>
+            Don't Have an Account?
+            <a class="link-underline link-underline-opacity-0" href="index.html"
+              >Register here.</a
+            >
+          </p>
+        </form>
+      </div>
+      <!-- LOGIN END -->
+  
+      <p class="border-top pt-3 text-center">
+        &copy; 2024 | Made by
+        <a
+          class="link-underline link-underline-opacity-0"
+          href="https://github.com/Ajus19"
+          target="_blank"
+        >
+          Ajus19
+        </a>
+        with love
+      </p>
     </div>
-
-    <!-- LOGIN START -->
-    <div class="container col pt-5 ps-5 pe-lg-5 pe-4">
-      <form id="loginForm" class="d-flex flex-column gap-4">
-        <h2>Login Cuyy!! 🚀</h2>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus
-          reprehenderit assumenda autem rerum natus veniam ea eius obcaecati?
-          Sit nam, nemo quaerat magni dicta beatae laudantium voluptates debitis
-          mollitia ab?
-        </p>
-
-        <div>
-          <label for="userToLogin" class="form-label">Username / Email</label>
-          <input
-            type="text"
-            class="form-control"
-            id="userToLogin"
-            placeholder="Username, Email"
-            required
-          />
-        </div>
-
-        <div>
-          <label for="passwordToLogin" class="form-label">Password</label>
-          <input
-            required
-            type="password"
-            class="form-control"
-            id="passwordToLogin"
-            placeholder="*******"
-          />
-        </div>
-
-        <div class="d-flex align-items-center gap-2">
-          <input type="checkbox" id="rememberMe" class="form-check-input" />
-          <label for="rememberMe" class="form-check-label">Remember Me</label>
-        </div>
-
-        <button type="submit" class="btn btn-primary">Login</button>
-
-        <p>
-          Don't Have an Account?
-          <a class="link-underline link-underline-opacity-0" href="index.html"
-            >Register here.</a
-          >
-        </p>
-      </form>
-    </div>
-    <!-- LOGIN END -->
-
-    <p class="border-top pt-3 text-center">
-      &copy; 2024 | Made by
-      <a
-        class="link-underline link-underline-opacity-0"
-        href="https://github.com/Ajus19"
-        target="_blank"
-      >
-        Ajus19
-      </a>
-      with love
-    </p>
-
     <script src="./public/js/script.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script
